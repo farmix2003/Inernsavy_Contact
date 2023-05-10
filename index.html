@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- <link rel="stylesheet" href="animatsiya.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha384-aAeT7vvEpT+TlGJkW6D8G6U+Y6S1+z6qyjrrfJ+4UzzQ4qu4c6MxJluUg6YH0S37"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="navbar-main">
+          <div class="navbar-logo">
+            <img src="./logo/logo.png" alt="" />
+          </div>
+          <div class="navbar-info">
+            <p><i class="fa-solid fa-phone"></i>+(90)542-866-73-21</p>
+            <button type="submit">Contact us</button>
+            <i class="fa-solid fa-house"></i>
+            <b>Log in</b>
+            <span></span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="content">
+          <h2>Lets build future together</h2>
+          <h4>We would love to help you to be best</h4>
+        </div>
+      </div>
+
+      <div class="contact-main">
+        <div class="user-info">
+          <label for="name">Name*</label>
+          <input type="text" name="name" placeholder="name" />
+          <label for="surname">Surname*</label>
+          <input type="text" name="surname" placeholder="surname" />
+          <label for="email">Email*</label>
+          <input type="email" placeholder="email" />
+          <label for="subjet">Your message*</label>
+          <textarea
+            name="subject"
+            id="subject"
+            cols="10"
+            rows="8"
+            placeholder="Subject..."
+          ></textarea>
+          <button type="submit">Submit</button>
+        </div>
+        <div class="location-info">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24306.815929830453!2d71.78597110000001!3d40.401052449999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suz!2s!4v1681560444721!5m2!1suz!2s"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="infos">
+              <h5><i class="fa-solid fa-location-dot"></i>Karadag' 3, Lefke</h5>
+              <h5>99770, Nicoisa Cyprus</h5>
+              <p><i class="fa-solid fa-envelope"></i>ffarrux386@gmail.com</p>
+
+              <p><i class="fa-solid fa-phone"></i>+(90)542-866-73-21</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

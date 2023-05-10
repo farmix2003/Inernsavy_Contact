@@ -1,0 +1,324 @@
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    height: 50vh;
+    width: 100%;
+  }
+  .navbar-main {
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+    height: 5vh;
+  }
+  .navbar-logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  .navbar-info {
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-info p {
+    opacity: 0;
+  }
+  .navbar-info p i {
+    opacity: 0;
+  }
+  .navbar-info button {
+    opacity: 0;
+  }
+  .navbar-info .fa-house {
+    opacity: 0;
+  }
+  .navbar-info b {
+    opacity: 0;
+  }
+  .navbar-info span {
+    opacity: 0;
+    margin-left: -90px;
+  }
+  .navbar-info i {
+    font-size: 1.5rem;
+    opacity: 1;
+    margin-left: -16px;
+    margin-top: -60px;
+    cursor: pointer;
+  }
+  .content {
+    margin: 50px 2%;
+    font-size: 1.1rem;
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+  }
+  .content h4 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin-left: 0px;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+  }
+  .contact-main {
+    margin-top: 100px;
+    background-color: aliceblue;
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .user-info {
+    margin-left: 34%;
+    width: 0;
+    display: grid;
+    justify-content: start;
+  }
+  .user-info label {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: coral;
+    align-items: start;
+  }
+  .user-info input {
+    width: 94%;
+  }
+  .user-info textarea {
+    width: 250px;
+    margin-left: 20px;
+  }
+  .user-info button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 7px 14px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .user-info input::placeholder {
+    font-family: cursive;
+  }
+  .location-info {
+    margin-right: 200px;
+  }
+  #map {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    margin-left: 300px;
+    margin-top: 40px;
+  }
+  .location-info .infos {
+    margin-top: 10px;
+    padding: 5 px;
+    text-align: center;
+    color: dimgrey;
+    margin-left: -100px;
+    text-align: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .location-info .infos h5 {
+    margin-top: 1px;
+    font-size: 12px;
+  }
+  .location-info .infos i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .location-info .infos a {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    height: 35vh;
+    background-image: url("./logo/img.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px;
+    height: 5vh;
+    z-index: 999;
+  }
+
+  .navbar-info {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-logo img {
+    margin-top: -10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: absolute;
+  }
+  .navbar-info p {
+    margin-right: 200px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    align-self: self-start;
+    font-weight: bold;
+    justify-content: start;
+  }
+  .navbar-info p i {
+    margin-right: 5px;
+    font-size: 16px;
+    align-self: center;
+    justify-content: center;
+  }
+  .navbar-info button {
+    position: absolute;
+    margin-left: 50px;
+    color: #fff;
+    border: 1px solid orangered;
+    padding: 7px 25px;
+    font-weight: 800;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 0.5px;
+    font-family: sans-serif;
+    transition: 0.3s ease-in all;
+  }
+  .navbar-info button:hover {
+    background-color: #fff;
+    color: orangered;
+  }
+  .navbar-info i {
+    margin-right: 10px;
+  }
+  .navbar-info b {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .navbar-info span {
+    width: 2px;
+    background-color: #fff;
+    height: 25px;
+    margin-right: 10px;
+  }
+  .navbar-info i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .content {
+    margin: 100px 17%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: cursive;
+  }
+  .content h4 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    margin-left: -20px;
+  }
+  .contact-main {
+    margin-top: 10rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .user-info {
+    margin-top: 3rem;
+    margin-left: 20%;
+    width: 500px;
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .user-info label {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: coral;
+    align-items: start;
+  }
+  .user-info input {
+    width: 95%;
+  }
+  .user-info textarea {
+    width: 300px;
+  }
+  .location-info {
+    margin-right: 370px;
+  }
+  #map {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    margin-right: -110px;
+    margin-top: 100px;
+  }
+  .location-info .infos {
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    color: dimgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .location-info .infos h5 {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .location-info .infos i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .location-info .infos a {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+}
